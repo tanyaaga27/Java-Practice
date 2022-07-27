@@ -1,0 +1,23 @@
+CLASS AND OBJECTS
+A class is like a template or a blueprint for objects. It defines the state and behavior of any object. A class doesn’t have any physical existence in the memory. It’s just a logical entity. 
+For example, I have a class called car. This class will define what will be the state and behaviour of a particular car. State such as the color and the model of the car. Behaviour such as it can move , it can stop etc. 
+class car{
+String color;
+Int model;
+void run()
+{
+System.out.print(“This car runs”);
+}
+void stop()
+{
+System.out.print(“The car stops when brakes are applied”);
+}
+}
+
+Unlike class, object is a real-world entity that exists and takes up space in the memory. It has a state and behavior that is defined inside the blueprint i.e. the class it belongs to. State is stored in fields and behavior is shown via methods. 
+When you create an object, what happens behind the scene is that a piece of memory is reserved for containing that object. This could be anywhere in the memory, it's up to the operating system and the compiler.
+For example, 
+car honda=new car();
+honda.run();
+new car() tells the JVM to build a new car using the car blueprint. The JVM does so and returns a reference which gets saved inside the variable honda.
+In line 2, we dereference honda to call a method run() on it. This is like going to address where honda is and doing the operation run() on it ( details of which is define in class car). 
