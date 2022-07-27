@@ -1,0 +1,22 @@
+Abstract Class : 
+Using Abstract class we can achieve(0-100%) abstraction. By creating abstract class, we show only essential information and hide the internal details . The method body is defined in the class that extends it. 
+ 
+-An abstract class can have abstract and concrete methods both. An abstract class have non-abstract methods but an abstract method cannot be inside a non-abstract class. 
+abstact class vehicle{
+int no_of_tyres;
+abstract void start();
+}
+Class car extends vehicle{
+ void start()
+{
+System.out.print(“Starts with key”);
+}
+}
+Class scooter extends vehicle{
+ void start()
+{
+System.out.print(“Starts with kick”);
+}
+}
+-It is not possible to create an object of abstract class but reference can be made.
+-If a regular class extends an abstract class, then the class has to implement all the abstract methods of abstract parent class.
