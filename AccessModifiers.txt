@@ -1,0 +1,5 @@
+There are 3 types of Access Modifiers :- 
+1)Public : The code inside the class is accessible everywhere, inside the class, outside the class , inisde the package and outside the package.
+2)private : Code is accessible only within the declare class.
+3)default : Class is accessible only within the same package. Not specifying any modifiers is default modifier.
+4)protected : Class can be accessed within the package and outside the package only through child class.
