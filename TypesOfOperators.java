@@ -17,21 +17,21 @@ class TypesOfOperators
 		
 		//Arithematic operators
 		a=10;  
-        int b=5;  
-        System.out.println(a+b);//15  
-        System.out.println(a-b);//5  
-        System.out.println(a*b);//50  
-        System.out.println(a/b);//2  
-        System.out.println(a%b);//0 
+                int b=5;  
+                System.out.println(a+b);//15  
+                System.out.println(a-b);//5  
+                System.out.println(a*b);//50  
+                System.out.println(a/b);//2  
+                System.out.println(a%b);//0 
 		
 		//Logical Operator 
 		//&& second condition doesn't get checked if first is false
 		//|| second condition gets checked only if first is false
 		a=10;  
-        b=5;  
-        int c=20;  
-        System.out.println(a<b&&a<c);//false && true = false  
-        System.out.println(a>b||a<c);//true || true = true  
+                b=5;  
+                int c=20;  
+                System.out.println(a<b&&a<c);//false && true = false  
+                System.out.println(a>b||a<c);//true || true = true  
 		
 		//Assignment Operator
 		a=10;  
