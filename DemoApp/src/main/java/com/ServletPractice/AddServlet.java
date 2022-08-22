@@ -22,7 +22,7 @@ public class AddServlet extends HttpServlet{
 		
 		//Request Dispatcher Method
 		/*req.setAttribute("sum", sum);
-	    RequestDispatcher rd =req.getRequestDispatcher("sq");
+	    //RequestDispatcher rd =req.getRequestDispatcher("sq");
 		rd.forward(req, res);*/
 		
 		//sendRedirect URL Rewriting
