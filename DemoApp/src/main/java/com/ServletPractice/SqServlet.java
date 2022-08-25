@@ -19,10 +19,10 @@ public class SqServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException
 	{
 		//Getting Data from Request Dispatcher method
-		/*int sum = (int)req.getAttribute("sum");
+		int sum = (int)req.getAttribute("sum");
 		sum = sum*sum;
 		PrintWriter pw = res.getWriter();
-		pw.println("Result after adding and squaring="+sum);*/
+		pw.println("Result after adding and squaring="+sum);
 		
 		//Getting data from sendDirect method
 		/*int sum = Integer.parseInt(req.getParameter("sum"));
@@ -38,16 +38,16 @@ public class SqServlet extends HttpServlet {
 		pw.println("Result after adding and squaring="+sum);*/
 		
 		//Getting Data from Cookie
-		int sum=0;
+		/*int sum=0;
 		Cookie[] cookies = req.getCookies();
 		for(Cookie c : cookies)
 		{
 			if(c.getName().equals("sum"))
 				sum=Integer.parseInt(c.getValue());
 		}
-		sum = sum*sum;
+		sum = sum*sum; 
 		PrintWriter pw = res.getWriter();
-		pw.println("Result after adding and squaring="+sum);
+		pw.println("Result after adding and squaring="+sum);*/
 		
 		//ServletContext
 		//It is shared by all the servlets.
@@ -62,7 +62,7 @@ public class SqServlet extends HttpServlet {
 		//It is different for different servlets
 		ServletConfig con = getServletConfig();
 		String name2 = con.getInitParameter("name");
-		pw.println(name2s);
+		pw.println(name);
 		
 		
 		

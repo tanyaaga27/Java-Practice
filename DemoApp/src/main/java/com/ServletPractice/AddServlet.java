@@ -21,15 +21,15 @@ public class AddServlet extends HttpServlet{
 		int sum = i+j;
 		
 		//Request Dispatcher Method
-		/*req.setAttribute("sum", sum);
-	    //RequestDispatcher rd =req.getRequestDispatcher("sq");
-		rd.forward(req, res);*/
+		req.setAttribute("sum", sum);
+	    RequestDispatcher rd =req.getRequestDispatcher("sq");
+		rd.forward(req, res);
 		
 		//sendRedirect URL Rewriting
 		//1st Method : URL rewriting
 		/*res.sendRedirect("sq?sum="+sum); */
 		
-		//2nd Mthod : Session
+		//2nd Method : Session
 		//A browser maintains a session for the time you're there, for your entire visit
 		//The data in session is maintained throughout unless you delete it
 		/* HttpSession session = req.getSession();
@@ -39,9 +39,9 @@ public class AddServlet extends HttpServlet{
 		//Cookie ( Alternative of session)
 		//When you send a req to the server, server send a response which will have a cookie.
 		//When you send a request another servlet, you can send the same cookie
-		Cookie cookie = new Cookie("sum",sum+"");
+		/*Cookie cookie = new Cookie("sum",sum+"");
 		res.addCookie(cookie);
-		res.sendRedirect("sq");
+		res.sendRedirect("sq");*/
 		
 		
 		
